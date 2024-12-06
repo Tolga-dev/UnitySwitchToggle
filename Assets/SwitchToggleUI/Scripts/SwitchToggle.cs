@@ -1,6 +1,6 @@
 ﻿using UnityEngine ;
 using UnityEngine.UI ;
-using DG.Tweening ;
+// using DG.Tweening ;
 
 public class SwitchToggle : MonoBehaviour {
    [SerializeField] RectTransform uiHandleRectTransform ;
@@ -33,14 +33,14 @@ public class SwitchToggle : MonoBehaviour {
    }
 
    void OnSwitch (bool on) {
-      //uiHandleRectTransform.anchoredPosition = on ? handlePosition * -1 : handlePosition ; // no anim
-      uiHandleRectTransform.DOAnchorPos (on ? handlePosition * -1 : handlePosition, .4f).SetEase (Ease.InOutBack) ;
+      uiHandleRectTransform.anchoredPosition = on ? handlePosition * -1 : handlePosition ; // no anim
+     // uiHandleRectTransform.DOAnchorPos (on ? handlePosition * -1 : handlePosition, .4f).SetEase (Ease.InOutBack) ;
 
-      //backgroundImage.color = on ? backgroundActiveColor : backgroundDefaultColor ; // no anim
-      backgroundImage.DOColor (on ? backgroundActiveColor : backgroundDefaultColor, .6f) ;
+      backgroundImage.color = on ? backgroundActiveColor : backgroundDefaultColor ; // no anim
+    //  backgroundImage.DOColor (on ? backgroundActiveColor : backgroundDefaultColor, .6f) ;
 
-      //handleImage.color = on ? handleActiveColor : handleDefaultColor ; // no anim
-      handleImage.DOColor (on ? handleActiveColor : handleDefaultColor, .4f) ;
+      handleImage.color = on ? handleActiveColor : handleDefaultColor ; // no anim
+    //  handleImage.DOColor (on ? handleActiveColor : handleDefaultColor, .4f) ;
    }
 
    void OnDestroy ( ) {
