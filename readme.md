@@ -20,4 +20,4 @@ A **custom UI toggle switch** for Unity, featuring color changes and position sh
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/UnitySwitchToggle.git
+   git clone https://github.com/Tolga-dev/UnitySwitchToggle.git
